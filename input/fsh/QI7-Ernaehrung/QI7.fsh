@@ -21,7 +21,7 @@ Description: "DIVI Quality Indicator 7: Patient-adapted Clinical Nutrition"
 
 // Reference to Quality Indicator 7b
 * action[+]
-  * title = "DIVI Quality Indicator 7b: Sufficient Feeding in Non-Adipose Patients "
+  * title = "DIVI Quality Indicator 7b: Sufficient Feeding in Non-Adipose Patients"
   * code = $cs-common-process#guideline-based-care
   * description = "Every day, all Non-Adipose Intensive Care Patients should receive the amount of Calories that match their daily individual requirements."
   * definitionCanonical = Canonical(SufficientFeeding)
