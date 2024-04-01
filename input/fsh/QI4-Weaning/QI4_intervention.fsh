@@ -79,5 +79,4 @@ Description: "The fraction of patients discharged to longterm-ventilation facili
   * target[+]
     * measure = $sct#306694006 "Discharge to Nursing Home"
     * detailRange.low = 0 'occurrence' "occurrence"
-    * due = 1 'day' "day"
 

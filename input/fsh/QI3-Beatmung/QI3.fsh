@@ -27,51 +27,59 @@ Description: "DIVI Quality Indicator 3: Patient-adapted Ventilation"
   * definitionCanonical = Canonical(PlateauPressureLimitation)
   * selectionBehavior = #all
 
-// References to Quality Indicator 3c
+// Reference to Quality Indicator 3c
 * action[+]
-  * title = "DIVI Quality Indicator 3c-1: PEEP adjusted in Dependence of FiO2=0.21-0.29"
+  * title = "DIVI Quality Indicator 3b: Driving Pressure Limitation"
+  * code = $cs-common-process#guideline-based-care
+  * description = "Driving pressure should be limited to a maximum of 15 cmH2O in all invasive ventilated ICU patients with severe ARDS."
+  * definitionCanonical = Canonical(DrivingPressureLimitation)
+  * selectionBehavior = #all
+
+// References to Quality Indicator 3d
+* action[+]
+  * title = "DIVI Quality Indicator 3d-1: PEEP adjusted in Dependence of FiO2=0.21-0.29"
   * code = $cs-common-process#guideline-based-care
   * description = "PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS."
   * definitionCanonical = Canonical(PEEPadjustedToFIO2-21to29)
   * selectionBehavior = #all
 
 * action[+]
-  * title = "DIVI Quality Indicator 3c-2: PEEP adjusted in Dependence of FiO2=0.3-0.39"
+  * title = "DIVI Quality Indicator 3d-2: PEEP adjusted in Dependence of FiO2=0.3-0.39"
   * code = $cs-common-process#guideline-based-care
   * description = "PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS."
   * definitionCanonical = Canonical(PEEPadjustedToFIO2-30to39)
   * selectionBehavior = #all
 
 * action[+]
-  * title = "DIVI Quality Indicator 3c-3: PEEP adjusted in Dependence of FiO2=0.4-0.49"
+  * title = "DIVI Quality Indicator 3d-3: PEEP adjusted in Dependence of FiO2=0.4-0.49"
   * code = $cs-common-process#guideline-based-care
   * description = "PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS."
   * definitionCanonical = Canonical(PEEPadjustedToFIO2-40to49)
   * selectionBehavior = #all
 
 * action[+]
-  * title = "DIVI Quality Indicator 3c-4: PEEP adjusted in Dependence of FiO2=0.5-0.59"
+  * title = "DIVI Quality Indicator 3d-4: PEEP adjusted in Dependence of FiO2=0.5-0.59"
   * code = $cs-common-process#guideline-based-care
   * description = "PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS."
   * definitionCanonical = Canonical(PEEPadjustedToFIO2-50to59)
   * selectionBehavior = #all
 
 * action[+]
-  * title = "DIVI Quality Indicator 3c-5: PEEP adjusted in Dependence of FiO2=0.6-0.79"
+  * title = "DIVI Quality Indicator 3d-5: PEEP adjusted in Dependence of FiO2=0.6-0.79"
   * code = $cs-common-process#guideline-based-care
   * description = "PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS."
   * definitionCanonical = Canonical(PEEPadjustedToFIO2-60to79)
   * selectionBehavior = #all
 
 * action[+]
-  * title = "DIVI Quality Indicator 3c-6: PEEP adjusted in Dependence of FiO2=0.8-0.99"
+  * title = "DIVI Quality Indicator 3d-6: PEEP adjusted in Dependence of FiO2=0.8-0.99"
   * code = $cs-common-process#guideline-based-care
   * description = "PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS."
   * definitionCanonical = Canonical(PEEPadjustedToFIO2-80to99)
   * selectionBehavior = #all
 
 * action[+]
-  * title = "DIVI Quality Indicator 3c-7: PEEP adjusted in Dependence of FiO2=1.0"
+  * title = "DIVI Quality Indicator 3d-7: PEEP adjusted in Dependence of FiO2=1.0"
   * code = $cs-common-process#guideline-based-care
   * description = "PEEP should be adjusted according to the table on ardsnet.org in dependence of the FiO2 required to achieve adequate oxygenation in all ventilated ICU patients with severe ARDS."
   * definitionCanonical = Canonical(PEEPadjustedToFIO2-100)

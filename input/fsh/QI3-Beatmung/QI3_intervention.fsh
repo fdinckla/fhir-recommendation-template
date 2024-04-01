@@ -37,7 +37,7 @@ Title: "Plateau Pressure Limitation"
 Description: "Plateau Pressure should be limited to a maximum of 30 cmH2O in all invasive ventilated ICU patients with severe ARDS."
 * insert canonical-url(DIVI-DigiQIs, intervention/plateau-pressure_limitation)
 * status = #active
-* name = "Intervention_PLateauPressure_Limitation"
+* name = "Intervention_PlateauPressure_Limitation"
 * date = "2024-03-29"
 * version = "1.0"
 
@@ -61,6 +61,37 @@ Description: "Plateau Pressure should be limited to a maximum of 30 cmH2O in all
     * measure = $loinc#76259-1 "Pressure.plateau Respiratory system airway --on ventilator"
     * detailRange.high = 30 'cm[H2O]' "cm[H2O]"
 
+
+Instance: DrivingPressureLimitation
+InstanceOf: recommendation-plan 
+Usage: #definition
+Title: "Driving Pressure Limitation"
+Description: "Driving Pressure should be limited to a maximum of 15 cmH2O in all invasive ventilated ICU patients with severe ARDS."
+* insert canonical-url(DIVI-DigiQIs, intervention/driving-pressure_limitation)
+* status = #active
+* name = "Intervention_DrivingPressure_Limitation"
+* date = "2024-03-29"
+* version = "1.0"
+
+// Reference Recommendation Collection
+* extension[partOf].valueCanonical = Canonical(DIVIQualityIndicator3)
+
+// Reference Population for the Intervention: Intensive Care Patients
+* subjectCanonical = Canonical(IntensiveCarePatients-SevereARDS-InvasiveVentilation)
+
+// Define Intervention 
+* action[ventilatorManagement][+]
+  * code = $sct#410210009 "Ventilator care management (procedure)"
+  * goalId[+] = "driving-pressure-goal"
+
+// Define Goal for Intervention 
+* goal[ventilatorManagement][+]
+  * category = $sct#385857005 "Ventilator care and adjustment (regime/therapy)"
+  * id = "driving-pressure-goal"
+  * description.text = "Driving pressure should be limited to a maximum of 15 cmH2O."
+  * target[+]
+    * measure = $loinc#76154-4 "Airway pressure delta --on ventilator"
+    * detailRange.high = 15 'cm[H2O]' "cm[H2O]"
 
 Instance: PEEPadjustedToFIO2-21to29
 InstanceOf: recommendation-plan 
