@@ -16,6 +16,7 @@ Description: "All Intensive Care Patients with invasive devices should have a da
 * subjectCanonical = Canonical(IntensiveCarePatients-InvasiveDevice)
 
 // Define Intervention 
+* insert rs-combination-all
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
   * goalId[+] = "assessment-stop-orders-invasive-devices"
@@ -49,6 +50,7 @@ Description: "The number of infections per invasive devices should be low."
 * subjectCanonical = Canonical(IntensiveCarePatients-InvasiveDevice)
 
 // Define Intervention 
+* insert rs-combination-all
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
   * goalId[+] = "assessment-infection-device-ratio"
@@ -82,6 +84,7 @@ Description: "The consumption of hand disinfectant should be more than 80 litres
 * subjectCanonical = Canonical(IntensiveCarePatients)
 
 // Define Intervention 
+* insert rs-combination-all
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
   * goalId[+] = "assessment-hand-disinfectant-consumption"

@@ -16,8 +16,7 @@ Description: "All invasive ventilated Intensive Care Patients should be evaluate
 * subjectCanonical = Canonical(IntensiveCarePatients-InvasiveVentilation)
 
 // Define Intervention 
-/* * action[combination][+]
-  * insert rs-combination-any */
+* insert rs-combination-any 
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
   * goalId[+] = "assessment-weaning-goal"
@@ -64,9 +63,8 @@ Description: "The fraction of patients discharged to longterm-ventilation facili
 * subjectCanonical = Canonical(IntensiveCarePatients-InvasiveVentilation)
 
 // Define Intervention 
-/* * action[other][+]  
-  * code = $sct#306694006 "Discharge to Nursing Home"
-  * doNotPerform = true */
+* insert rs-combination-all
+//  * doNotPerform = true 
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
   * goalId[+] = "no-discharge-longterm-ventilation-facility-goal"
@@ -75,7 +73,7 @@ Description: "The fraction of patients discharged to longterm-ventilation facili
 * goal[assessmentScale][+]
   * category = $sct#273249006 "Assessment scales (assessment scale)"
   * id = "no-discharge-longterm-ventilation-facility-goal"
-  * description.text = "Readiness-to-wean should be assessed periodically every day."
+  * description.text = "The fraction of patients discharged to longterm-ventilation facilities should be low."
   * target[+]
     * measure = $sct#306694006 "Discharge to Nursing Home"
     * detailRange.low = 0 'occurrence' "occurrence"

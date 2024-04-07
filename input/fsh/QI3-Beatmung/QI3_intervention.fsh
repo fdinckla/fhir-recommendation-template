@@ -16,6 +16,7 @@ Description: "Tidal volume should be limited to a maximum of 6 ml/kg ideal body 
 * subjectCanonical = Canonical(IntensiveCarePatients-SevereARDS-InvasiveVentilation)
 
 // Define Intervention 
+* insert rs-combination-all
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "tidal-volume-goal"
@@ -48,6 +49,7 @@ Description: "Plateau Pressure should be limited to a maximum of 30 cmH2O in all
 * subjectCanonical = Canonical(IntensiveCarePatients-SevereARDS-InvasiveVentilation)
 
 // Define Intervention 
+* insert rs-combination-all
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "plateau-pressure-goal"
@@ -80,6 +82,7 @@ Description: "Driving Pressure should be limited to a maximum of 15 cmH2O in all
 * subjectCanonical = Canonical(IntensiveCarePatients-SevereARDS-InvasiveVentilation)
 
 // Define Intervention 
+* insert rs-combination-all
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "driving-pressure-goal"
@@ -111,6 +114,7 @@ Description: "PEEP should be adjusted according to the table on ardsnet.org in d
 * subjectCanonical = Canonical(IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-21to29)
 
 // Define Intervention 
+* insert rs-combination-all
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "peep-goal-fiO2-21to29"
@@ -145,6 +149,7 @@ Description: "PEEP should be adjusted according to the table on ardsnet.org in d
 * subjectCanonical = Canonical(IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-30to39)
 
 // Define Intervention 
+* insert rs-combination-all
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "peep-goal-fiO2-30to39"
@@ -179,6 +184,7 @@ Description: "PEEP should be adjusted according to the table on ardsnet.org in d
 * subjectCanonical = Canonical(IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-40to49)
 
 // Define Intervention 
+* insert rs-combination-all
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "peep-goal-fiO2-40to49"
@@ -213,6 +219,7 @@ Description: "PEEP should be adjusted according to the table on ardsnet.org in d
 * subjectCanonical = Canonical(IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-50to59)
 
 // Define Intervention 
+* insert rs-combination-all
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "peep-goal-fiO2-50to59"
@@ -247,6 +254,7 @@ Description: "PEEP should be adjusted according to the table on ardsnet.org in d
 * subjectCanonical = Canonical(IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-60to79)
 
 // Define Intervention 
+* insert rs-combination-all
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "peep-goal-fiO2-60to79"
@@ -281,6 +289,7 @@ Description: "PEEP should be adjusted according to the table on ardsnet.org in d
 * subjectCanonical = Canonical(IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-80to99)
 
 // Define Intervention 
+* insert rs-combination-all
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "peep-goal-fiO2-80to99"
@@ -315,6 +324,7 @@ Description: "PEEP should be adjusted according to the table on ardsnet.org in d
 * subjectCanonical = Canonical(IntensiveCarePatients-SevereARDS-InvasiveVentilation-FiO2-100)
 
 // Define Intervention 
+* insert rs-combination-all
 * action[ventilatorManagement][+]
   * code = $sct#410210009 "Ventilator care management (procedure)"
   * goalId[+] = "peep-goal-fiO2-100"

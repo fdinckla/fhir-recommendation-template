@@ -16,6 +16,7 @@ Description: "All Intensive Care Patients should be mobilized within 24 hours af
 * subjectCanonical = Canonical(IntensiveCarePatients)
 
 // Define Intervention 
+* insert rs-combination-all
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
   * goalId[+] = "assessment-inital-mobilization"
@@ -53,6 +54,7 @@ Description: "All Intensive Care Patients that don't have a no-mobilization orde
 * subjectCanonical = Canonical(IntensiveCarePatients-WithOut-NoMobilizationOrder)
 
 // Define Intervention 
+* insert rs-combination-all
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
   * goalId[+] = "assessment-periodic-mobilization"

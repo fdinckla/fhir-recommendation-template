@@ -10,6 +10,7 @@ Description: "DIVI Quality Indicator 7: Patient-adapted Clinical Nutrition"
 * insert canonical-url(DIVI-DigiQIs, recommendation/DIVI-QualityIndicator-7)
 * experimental = true
 * publisher = "Deutsche Interdisziplinäre Vereinigung für Intensiv- und Notfallmedizin (DIVI)"
+* insert rs-combination-all
 
 // Reference to Quality Indicator 7a
 * action[+]
@@ -17,7 +18,6 @@ Description: "DIVI Quality Indicator 7: Patient-adapted Clinical Nutrition"
   * code = $cs-common-process#guideline-based-care
   * description = "All Intensive Care Patients for which a sufficient oral nutrition is not expected on day one should be started on enteral feeding within 24 hours."
   * definitionCanonical = Canonical(EarlyEnteralFeeding)
-  * selectionBehavior = #all
 
 // Reference to Quality Indicator 7b
 * action[+]
@@ -25,5 +25,4 @@ Description: "DIVI Quality Indicator 7: Patient-adapted Clinical Nutrition"
   * code = $cs-common-process#guideline-based-care
   * description = "Every day, all Non-Adipose Intensive Care Patients should receive the amount of Calories that match their daily individual requirements."
   * definitionCanonical = Canonical(SufficientFeeding)
-  * selectionBehavior = #all
 

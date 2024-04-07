@@ -16,6 +16,7 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be asse
 * subjectCanonical = Canonical(IntensiveCarePatients)
 
 // Define Intervention 
+* insert rs-combination-all
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
   * goalId[+] = "assessment-sedation-goal"
@@ -71,6 +72,7 @@ Description: "Sedation Level, Analgesia Level and Delirium Status should be in a
 * subjectCanonical = Canonical(IntensiveCarePatients)
 
 // Define Intervention 
+* insert rs-combination-all
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
   * goalId[+] = "sedation-inrange-goal"

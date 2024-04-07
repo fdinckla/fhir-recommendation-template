@@ -10,6 +10,7 @@ Description: "DIVI Quality Indicator 4: Early Weaning from Invasive Ventilation"
 * insert canonical-url(DIVI-DigiQIs, recommendation/DIVI-QualityIndicator-4)
 * experimental = true
 * publisher = "Deutsche Interdisziplinäre Vereinigung für Intensiv- und Notfallmedizin (DIVI)"
+* insert rs-combination-all
 
 // Reference to Quality Indicator 4a
 * action[+]
@@ -17,7 +18,6 @@ Description: "DIVI Quality Indicator 4: Early Weaning from Invasive Ventilation"
   * code = $cs-common-process#guideline-based-care
   * description = "All invasive ventilated Intensive Care Patients should be evaluated for their readiness-to-wean and/or receive weaning trials at least once every day."
   * definitionCanonical = Canonical(PeriodicAssessmentOfWeaning)
-  * selectionBehavior = #all
 
 // Reference to Quality Indicator 4b
 * action[+]
@@ -25,5 +25,4 @@ Description: "DIVI Quality Indicator 4: Early Weaning from Invasive Ventilation"
   * code = $cs-common-process#guideline-based-care
   * description = "The fraction of patients discharged to longterm-ventilation facilities should be low."
   * definitionCanonical = Canonical(DischargeToLongtermVentilationFacility)
-  * selectionBehavior = #all
 

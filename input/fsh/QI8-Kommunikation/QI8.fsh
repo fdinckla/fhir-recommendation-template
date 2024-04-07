@@ -10,6 +10,7 @@ Description: "DIVI Quality Indicator 8: Structured Communication with Patients a
 * insert canonical-url(DIVI-DigiQIs, recommendation/DIVI-QualityIndicator-8)
 * experimental = true
 * publisher = "Deutsche Interdisziplinäre Vereinigung für Intensiv- und Notfallmedizin (DIVI)"
+* insert rs-combination-all
 
 // Reference to Quality Indicator 8a
 * action[+]
@@ -17,7 +18,6 @@ Description: "DIVI Quality Indicator 8: Structured Communication with Patients a
   * code = $cs-common-process#guideline-based-care
   * description = "For all Intensive Care Patients, an initial structured communication with the Patients and/or their Relatives should take place within 72 hours of Admission to Intensive Care."
   * definitionCanonical = Canonical(InitialCommunicationPatientsRelatives)
-  * selectionBehavior = #all
 
 // Reference to Quality Indicator 8b
 * action[+]
@@ -25,5 +25,4 @@ Description: "DIVI Quality Indicator 8: Structured Communication with Patients a
   * code = $cs-common-process#guideline-based-care
   * description = "For all Intensive Care Patients, at least one structured communication with the Patients and/or their Relatives should take place every week."
   * definitionCanonical = Canonical(PeriodicCommunicationPatientsRelatives)
-  * selectionBehavior = #all
 

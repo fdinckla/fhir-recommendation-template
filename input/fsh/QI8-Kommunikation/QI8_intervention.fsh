@@ -16,6 +16,7 @@ Description: "For all Intensive Care Patients, an initial structured communicati
 * subjectCanonical = Canonical(IntensiveCarePatients-IntensiveCareLongerThanThreeDays)
 
 // Define Intervention 
+* insert rs-combination-all
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
   * goalId[+] = "assessment-inital-communication-patients-relatives"
@@ -28,7 +29,7 @@ Description: "For all Intensive Care Patients, an initial structured communicati
   * target[+]
     * measure = $sct#225330006 "Client Participation"
     * detailRange.low = 1 'occurrence' "occurrence"
-    * due = 1 'day' "day"
+    * due = 3 'day' "day"
 /*     * timeFromEvent
       * eventCodeableConcept = $sct#305351004 "Admission to Intensive Care Unit"
       * range 
@@ -53,6 +54,7 @@ Description: "For all Intensive Care Patients, at least one structured communica
 * subjectCanonical = Canonical(IntensiveCarePatients-IntensiveCareLongerThanThreeDays)
 
 // Define Intervention 
+* insert rs-combination-all
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
   * goalId[+] = "assessment-periodic-communication-patients-relatives"

@@ -10,6 +10,7 @@ Description: "DIVI Quality Indicator 5: Infection Prevention"
 * insert canonical-url(DIVI-DigiQIs, recommendation/DIVI-QualityIndicator-5)
 * experimental = true
 * publisher = "Deutsche Interdisziplinäre Vereinigung für Intensiv- und Notfallmedizin (DIVI)"
+* insert rs-combination-all
 
 // Reference to Quality Indicator 5a
 * action[+]
@@ -17,7 +18,6 @@ Description: "DIVI Quality Indicator 5: Infection Prevention"
   * code = $cs-common-process#guideline-based-care
   * description = "All Intensive Care Patients with invasive devices should have a daily re-evaluation regarding the necessity of each device."
   * definitionCanonical = Canonical(StopOdersInvasiveDevices)
-  * selectionBehavior = #all
 
 // Reference to Quality Indicator 5b
 * action[+]
@@ -25,7 +25,6 @@ Description: "DIVI Quality Indicator 5: Infection Prevention"
   * code = $cs-common-process#guideline-based-care
   * description = "The number of infections per invasive devices should be low."
   * definitionCanonical = Canonical(InfectionDeviceRatio)
-  * selectionBehavior = #all
 
 // Reference to Quality Indicator 5c
 * action[+]
@@ -33,7 +32,6 @@ Description: "DIVI Quality Indicator 5: Infection Prevention"
   * code = $cs-common-process#guideline-based-care
   * description = "The consumption of hand disinfectant should be more than 80 litres per 1000 days."
   * definitionCanonical = Canonical(HandDisinfectantConsumption)
-  * selectionBehavior = #all
 
 
 

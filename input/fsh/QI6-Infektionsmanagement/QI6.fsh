@@ -10,6 +10,7 @@ Description: "DIVI Quality Indicator 6: Infection Management"
 * insert canonical-url(DIVI-DigiQIs, recommendation/DIVI-QualityIndicator-6)
 * experimental = true
 * publisher = "Deutsche Interdisziplinäre Vereinigung für Intensiv- und Notfallmedizin (DIVI)"
+* insert rs-combination-all
 
 // Reference to Quality Indicator 6a
 * action[+]
@@ -17,7 +18,6 @@ Description: "DIVI Quality Indicator 6: Infection Management"
   * code = $cs-common-process#guideline-based-care
   * description = "All Intensive Care Patients with Antibiotics should have a daily re-evaluation of the Indication, Focus and Duration of Therapy for each Antibiotic."
   * definitionCanonical = Canonical(AntibioticsIndicationFocusDuration)
-  * selectionBehavior = #all
 
 // Reference to Quality Indicator 6b
 * action[+]
@@ -25,7 +25,6 @@ Description: "DIVI Quality Indicator 6: Infection Management"
   * code = $cs-common-process#guideline-based-care
   * description = "The Frequency of Blood Cultures should be at least 80 per 1000 days."
   * definitionCanonical = Canonical(FrequencyBloodCultures)
-  * selectionBehavior = #all
 
 
 

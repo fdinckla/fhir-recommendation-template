@@ -10,6 +10,7 @@ Description: "DIVI Quality Indicator 9: Early Mobilization"
 * insert canonical-url(DIVI-DigiQIs, recommendation/DIVI-QualityIndicator-9)
 * experimental = true
 * publisher = "Deutsche Interdisziplinäre Vereinigung für Intensiv- und Notfallmedizin (DIVI)"
+* insert rs-combination-all
 
 // Reference to Quality Indicator 9a
 * action[+]
@@ -17,7 +18,6 @@ Description: "DIVI Quality Indicator 9: Early Mobilization"
   * code = $cs-common-process#guideline-based-care
   * description = "All Intensive Care Patients should be mobilized within 24 hours after admission to ICU."
   * definitionCanonical = Canonical(InitialMobilization)
-  * selectionBehavior = #all
 
 // Reference to Quality Indicator 9b
 * action[+]
@@ -25,5 +25,4 @@ Description: "DIVI Quality Indicator 9: Early Mobilization"
   * code = $cs-common-process#guideline-based-care
   * description = "All Intensive Care Patients that don't have a no-mobilization order should be mobilized at least once every day."
   * definitionCanonical = Canonical(PeriodicMobilization)
-  * selectionBehavior = #all
 

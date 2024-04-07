@@ -10,6 +10,7 @@ Description: "DIVI Quality Indicator 2: Management of Sedation, Analgesia and De
 * insert canonical-url(DIVI-DigiQIs, recommendation/DIVI-QualityIndicator-2)
 * experimental = true
 * publisher = "Deutsche Interdisziplinäre Vereinigung für Intensiv- und Notfallmedizin (DIVI)"
+* insert rs-combination-all
 
 // Reference to Quality Indicator 2a
 * action[+]
@@ -17,13 +18,11 @@ Description: "DIVI Quality Indicator 2: Management of Sedation, Analgesia and De
   * code = $cs-common-process#guideline-based-care
   * description = "Sedation Level, Analgesia Level and Delirium Status should be assessed periodically every 8 hours in all Intensive Care Patients."
   * definitionCanonical = Canonical(PeriodicAssessmentOfSedationAnalgesiaDelirium)
-  * selectionBehavior = #all
-
+  
 // Reference to Quality Indicator 2b
 * action[+]
   * title = "DIVI Quality Indicator 2b: Sedation Level, Analgesia Level, Delirium Status"
   * code = $cs-common-process#guideline-based-care
   * description = "Sedation Level, Analgesia Level and Delirium Status should be in acceptable ranges in all Intensive Care Patients."
   * definitionCanonical = Canonical(SedationLevelAnalgesiaLevelDeliriumStatusInAcceptableRanges)
-  * selectionBehavior = #all
 

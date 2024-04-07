@@ -16,6 +16,7 @@ Description: "All Intensive Care Patients for which a sufficient oral nutrition 
 * subjectCanonical = Canonical(IntensiveCarePatients-PredictedInsufficientEnergyIntake)
 
 // Define Intervention 
+* insert rs-combination-all
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
   * goalId[+] = "assessment-early-feeding-goal"
@@ -53,6 +54,7 @@ Description: "Every day, all Non-Adipose Intensive Care Patients should receive 
 * subjectCanonical = Canonical(IntensiveCarePatients-ClinicallyFed-NoAdipositas)
 
 // Define Intervention 
+* insert rs-combination-all
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
   * goalId[+] = "assessment-sufficient-feeding-goal"

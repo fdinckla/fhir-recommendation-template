@@ -16,6 +16,7 @@ Description: "All Intensive Care Patients with Antibiotics should have a daily r
 * subjectCanonical = Canonical(IntensiveCarePatients-Antibiotic)
 
 // Define Intervention 
+* insert rs-combination-all
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
   * goalId[+] = "assessment-antibiotic-indication"
@@ -71,6 +72,7 @@ Description: "The Frequency of Blood Cultures should be at least 80 per 1000 day
 * subjectCanonical = Canonical(IntensiveCarePatients)
 
 // Define Intervention 
+* insert rs-combination-all
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
   * goalId[+] = "assessment-blood-cultures-frequency"

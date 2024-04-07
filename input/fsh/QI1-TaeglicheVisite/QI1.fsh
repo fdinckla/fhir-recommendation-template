@@ -10,6 +10,7 @@ Description: "DIVI Quality Indicator 1: Daily multiprofessional ward rounds with
 * insert canonical-url(DIVI-DigiQIs, recommendation/DIVI-QualityIndicator-1)
 * experimental = true
 * publisher = "Deutsche Interdisziplinäre Vereinigung für Intensiv- und Notfallmedizin (DIVI)"
+* insert rs-combination-all
 
 // Reference to Quality Indicator 1a
 * action[+]
@@ -17,7 +18,6 @@ Description: "DIVI Quality Indicator 1: Daily multiprofessional ward rounds with
   * code = $cs-common-process#guideline-based-care
   * description = "Every Intensive Care Patient should be visited daily in multiprofessional ward rounds."
   * definitionCanonical = Canonical(DailyMultiprofessionalWardRounds)
-  * selectionBehavior = #all
 
 // Reference to Quality Indicator 1b
 * action[+]
@@ -25,6 +25,5 @@ Description: "DIVI Quality Indicator 1: Daily multiprofessional ward rounds with
   * code = $cs-common-process#guideline-based-care
   * description = "Treatment Goals should be documented daily for every Intensive Care Patient."
   * definitionCanonical = Canonical(DailyDocumentationTreatmentGoals)
-  * selectionBehavior = #all
 
 

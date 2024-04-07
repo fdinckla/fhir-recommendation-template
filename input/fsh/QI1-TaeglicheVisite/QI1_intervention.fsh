@@ -16,6 +16,7 @@ Description: "Every Intensive Care Patient should be visited daily in multiprofe
 * subjectCanonical = Canonical(IntensiveCarePatients)
 
 // Define Intervention 
+* insert rs-combination-all
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
   * goalId[+] = "multiprofessional-wardrounds-goal"
@@ -49,6 +50,7 @@ Description: "Treatment Goals should be documented daily for every Intensive Car
 * subjectCanonical = Canonical(IntensiveCarePatients)
 
 // Define Intervention 
+* insert rs-combination-all
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
   * goalId[+] = "documentation-treatment-goals-goal"
