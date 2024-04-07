@@ -16,7 +16,7 @@ Description: "DIVI Quality Indicator 2: Management of Sedation, Analgesia and De
 * action[+]
   * title = "DIVI Quality Indicator 2a: Periodic Assessment of Sedation, Analgesia and Delirium in all Intensive Care Patients"
   * code = $cs-common-process#guideline-based-care
-  * description = "Sedation Level, Analgesia Level and Delirium Status should be assessed periodically every 8 hours in all Intensive Care Patients."
+  * description = "Sedation Level, Analgesia Level and Delirium Status should be assessed at least once in each shift (time-slots 6-14, 14-22, 22-6) in all Intensive Care Patients."
   * definitionCanonical = Canonical(PeriodicAssessmentOfSedationAnalgesiaDelirium)
   
 // Reference to Quality Indicator 2b
