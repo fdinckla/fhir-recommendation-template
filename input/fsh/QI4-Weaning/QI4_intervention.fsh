@@ -13,7 +13,7 @@ Description: "All invasive ventilated Intensive Care Patients should be evaluate
 * extension[partOf].valueCanonical = Canonical(DIVIQualityIndicator4)
 
 // Reference Population for the Intervention: Invasive Ventilated Intensive Care Patients
-* subjectCanonical = Canonical(IntensiveCarePatients-InvasiveVentilation)
+* subjectCanonical = Canonical(IntensiveCarePatients-InvasiveVentilation-NoHomeVentilation)
 
 // Define Intervention 
 * insert rs-combination-any 
@@ -45,14 +45,14 @@ Description: "All invasive ventilated Intensive Care Patients should be evaluate
     * due = 1 'day' "day"
 
 
-Instance: DischargeToLongtermVentilationFacility
+Instance: DischargeWithoutHomeVentilation
 InstanceOf: recommendation-plan 
 Usage: #definition
-Title: "Discharge to longterm-ventilation facility"
-Description: "The fraction of patients discharged to longterm-ventilation facilities should be low."
+Title: "Discharge with dependence on home ventilation"
+Description: "The fraction of patients discharged with dependence on home ventilation should be low."
 * insert canonical-url(DIVI-DigiQIs, intervention/discharge_longterm-ventilation-facility)
 * status = #active
-* name = "Intervention_Discharge_LongtermVentilationFacility"
+* name = "Intervention_Discharge_DependenceHomeVentilation"
 * date = "2024-03-29"
 * version = "1.0"
 
@@ -60,21 +60,22 @@ Description: "The fraction of patients discharged to longterm-ventilation facili
 * extension[partOf].valueCanonical = Canonical(DIVIQualityIndicator4)
 
 // Reference Population for the Intervention: Invasive Ventilated Intensive Care Patients
-* subjectCanonical = Canonical(IntensiveCarePatients-InvasiveVentilation)
+* subjectCanonical = Canonical(IntensiveCarePatients-InvasiveVentilation-NoHomeVentilation)
 
 // Define Intervention 
 * insert rs-combination-all
 //  * doNotPerform = true 
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
-  * goalId[+] = "no-discharge-longterm-ventilation-facility-goal"
+  * goalId[+] = "no-discharge-with-home-ventilation"
 
 // Define Goal for No Discharge to Longterm-Ventilation Facility
 * goal[assessmentScale][+]
   * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "no-discharge-longterm-ventilation-facility-goal"
-  * description.text = "The fraction of patients discharged to longterm-ventilation facilities should be low."
+  * id = "no-discharge-with-home-ventilation"
+  * description.text = "The fraction of patients discharged with dependence on home ventilation should be low."
   * target[+]
-    * measure = $sct#306694006 "Discharge to Nursing Home"
+    * measure = $sct#60631000119109 "Dependence on home ventilation"
     * detailRange.low = 0 'occurrence' "occurrence"
+    * detailCodeableConcept = $sct#306568008 "Discharge from intensive care service"
 

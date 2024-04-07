@@ -1,5 +1,6 @@
 // Author: Gregor Lichtner @glichtner
 // International code systems
+Alias: $divi-qi-s = http://divi.de/forschung/sektionsgruppen/qualitaetsverbesserung-und-informationstechnologie/informationstechnologie-und-medizintechnik
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $ucum = http://unitsofmeasure.org

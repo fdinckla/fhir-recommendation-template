@@ -21,17 +21,25 @@ Description: "DIVI Quality Indicator 5: Infection Prevention"
 
 // Reference to Quality Indicator 5b
 * action[+]
-  * title = "DIVI Quality Indicator 5b: Infection-per-Device Ratio"
+  * title = "DIVI Quality Indicator 5b: Hand Disinfectant Consumption"
+  * code = $cs-common-process#guideline-based-care
+  * description = "The consumption of hand disinfectant should be more than 80 litres per 1000 days."
+  * definitionCanonical = Canonical(HandDisinfectantConsumption)
+
+// Reference to Quality Indicator 5c
+* action[+]
+  * title = "DIVI Quality Indicator 5c: Infection-per-Device Ratio"
   * code = $cs-common-process#guideline-based-care
   * description = "The number of infections per invasive devices should be low."
   * definitionCanonical = Canonical(InfectionDeviceRatio)
 
-// Reference to Quality Indicator 5c
+// Reference to Quality Indicator 5d
 * action[+]
-  * title = "DIVI Quality Indicator 5c: Hand Disinfectant Consumption"
+  * title = "DIVI Quality Indicator 5d: Pneumonia-per-Ventilated-Patients Ratio"
   * code = $cs-common-process#guideline-based-care
-  * description = "The consumption of hand disinfectant should be more than 80 litres per 1000 days."
-  * definitionCanonical = Canonical(HandDisinfectantConsumption)
+  * description = "The number of pneumonia cases per ventilated patients should be low."
+  * definitionCanonical = Canonical(PenumoniaVentilatedPatientRatio)
+
 
 
 

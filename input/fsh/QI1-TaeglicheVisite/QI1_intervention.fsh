@@ -20,14 +20,27 @@ Description: "Every Intensive Care Patient should be visited daily in multiprofe
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
   * goalId[+] = "multiprofessional-wardrounds-goal"
+* action[assessment][+]
+  * code = $sct#386053000 "Evaluation procedure (procedure)"
+  * goalId[+] = "multiprofessional-wardrounds-include-icu-specialist-goal"
 
-// Define Goal for Multiprofessional Ward Rounds
+// Define Goal for Multiprofessional Ward Rounds occurrence
 * goal[assessmentScale][+]
   * category = $sct#273249006 "Assessment scales (assessment scale)"
   * id = "multiprofessional-wardrounds-goal"
   * description.text = "Ward Rounds should be performed at least once every day."
   * target[+]
     * measure = $sct#1236923003 "Participation in multidisciplinary ward round"
+    * detailRange.low = 1 'occurrence' "occurrence"
+    * due = 1 'd' "d"
+
+// Define Goal for participation of ICU specialist
+* goal[assessmentScale][+]
+  * category = $sct#273249006 "Assessment scales (assessment scale)"
+  * id = "multiprofessional-wardrounds-include-icu-specialist-goal"
+  * description.text = "Ward Rounds should include at least one physician with ICU specialist certification."
+  * target[+]
+    * measure = $divi-qi-s#FA-ZB-ITS "Participation of ICU specialist in multidisciplinary ward round"
     * detailRange.low = 1 'occurrence' "occurrence"
     * due = 1 'd' "d"
 
@@ -53,15 +66,15 @@ Description: "Treatment Goals should be documented daily for every Intensive Car
 * insert rs-combination-all
 * action[assessment][+]
   * code = $sct#386053000 "Evaluation procedure (procedure)"
-  * goalId[+] = "documentation-treatment-goals-goal"
+  * goalId[+] = "daily-treatment-goals-goal"
 
 // Define Goal for Documentation of Treatment Goals
 * goal[assessmentScale][+]
   * category = $sct#273249006 "Assessment scales (assessment scale)"
-  * id = "documentation-treatment-goals-goal"
+  * id = "daily-treatment-goals-goal"
   * description.text = "Treatment Goals should be documented at least once every day."
   * target[+]
-    * measure = $sct#8384110000000104 "Setting health objective"
-    * detailRange.low = 1 'assessment performed' "occurrence"
+    * measure = $divi-qi-s#TAGESZIEL "Setting health objective"
+    * detailRange.low = 1 'occurrence' "occurrence"
     * due = 1 'day' "day"
 

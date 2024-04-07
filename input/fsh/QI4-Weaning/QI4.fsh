@@ -21,8 +21,8 @@ Description: "DIVI Quality Indicator 4: Early Weaning from Invasive Ventilation"
 
 // Reference to Quality Indicator 4b
 * action[+]
-  * title = "DIVI Quality Indicator 4b: Discharge to longterm-ventilation facility"
+  * title = "DIVI Quality Indicator 4b: Discharge with dependence on home ventilation"
   * code = $cs-common-process#guideline-based-care
-  * description = "The fraction of patients discharged to longterm-ventilation facilities should be low."
-  * definitionCanonical = Canonical(DischargeToLongtermVentilationFacility)
+  * description = "The fraction of patients discharged with dependence on home ventilation should be low."
+  * definitionCanonical = Canonical(DischargeWithoutHomeVentilation)
 

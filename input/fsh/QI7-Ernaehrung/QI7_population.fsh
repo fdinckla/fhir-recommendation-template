@@ -49,3 +49,10 @@ Description: "Intensive Care Patients that are clinically fed and have no Adipos
       * low = 0 'mmHg' "mmHg"
       * high = 29.999999999 'mmHg' "mmHg"
 * characteristic[condition][=].exclude = false
+
+// Exclude Patients with Contraindication of Enteral Feeding 
+* characteristic[condition][+]
+  * definitionByTypeAndValue
+    * offset = $sct#103306004 "Contraindication to"
+    * valueCodeableConcept = $sct#229912004 "Enteral Feeding"
+* characteristic[condition][=].exclude = true
